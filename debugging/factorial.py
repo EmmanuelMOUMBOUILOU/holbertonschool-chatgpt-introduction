@@ -1,14 +1,14 @@
 #!/usr/bin/python3
+
 import sys
 
 def factorial(n):
     result = 1
     while n > 1:
         result *= n
-        n -= 1  # Correction : décrémenter n pour éviter la boucle infinie
+        n -= 1
     return result
 
-# Appeler la fonction avec un argument fourni en ligne de commande
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: ./factorial.py <non-negative integer>")
